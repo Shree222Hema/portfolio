@@ -9,7 +9,7 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/hemashree-kj-4b7720238/",
   },
   skills: {
-    programming: ["Java", "JavaScript", "Python"],
+    programming: ["Java", "JavaScript", "Python", "GoLang"],
     frontend: ["React.js", "Next.js", "HTML", "CSS"],
     backend: ["Spring Boot", "Node.js", "REST APIs"],
     database: ["PostgreSQL", "MySQL"],
@@ -40,8 +40,22 @@ export const siteConfig = {
     {
       role: "Entry Level Software Engineer",
       company: "Ominaya Technologies Pvt Ltd",
-      period: "Present",
-      description: "Leading the development of high-impact full-stack applications using React, Next.js, Node.js, and Spring Boot with a focus on AI integration.",
+      period: "August 2025 - Present",
+      description: "Developing full stack web applications using React, Next.js, and Node.js. Implementing REST APIs with Spring Boot for backend services and optimizing PostgreSQL database queries.",
+    },
+    {
+      role: "Data Analytics Intern",
+      company: "Ahana Systems and Solutions Pvt Ltd",
+      period: "Feb 2025 - June 2025",
+      description: "Built secure REST APIs for managing messages and implemented encryption for sensitive data storage. Deployed the application using Docker.",
+    },
+  ],
+  education: [
+    {
+      degree: "B.E. Computer Science & Engineering",
+      institution: "BGS Institute of Technology, Mandya",
+      period: "2021 - 2025",
+      details: "CGPA: 8.96",
     },
   ],
 };
