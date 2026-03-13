@@ -18,22 +18,22 @@ export const siteConfig = {
   },
   projects: [
     {
-      title: "Secure Message Management API",
-      description: "Developed a secure REST API with encrypted message storage and CRUD operations.",
-      tech: ["Spring Boot", "PostgreSQL", "Docker"],
-      github: "https://github.com/Shree222Hema/secure-message-api",
+      title: "Nexus AI - Intelligence Hub",
+      description: "A next-generation AI orchestration platform that manages multi-model workflows and vector memory for enterprise automation.",
+      tech: ["Next.js", "OpenAI", "Pinecone", "Node.js"],
+      github: "https://github.com/Shree222Hema/nexus-ai",
     },
     {
-      title: "Full Stack E-Commerce Web Application",
-      description: "Built a complete full stack e-commerce prototype with responsive UI and backend APIs.",
-      tech: ["React", "Next.js", "Node.js", "PostgreSQL"],
-      github: "https://github.com/Shree222Hema/ecommerce-app",
+      title: "Collaborative DocEngine",
+      description: "A high-concurrency document synchronization system using WebSockets and Operational Transformation for seamless multi-user editing.",
+      tech: ["Spring Boot", "WebSockets", "PostgreSQL", "React"],
+      github: "https://github.com/Shree222Hema/multi-user-docs",
     },
     {
-      title: "E-Commerce Dashboard",
-      description: "Created an interactive dashboard to analyze sales, customers, and product performance.",
-      tech: ["Power BI", "SQL"],
-      github: "https://github.com/Shree222Hema/ecommerce-dashboard",
+      title: "Smart Task Intelligence",
+      description: "An AI-powered task management engine that uses RAG to categorize, prioritize, and provide contextual insights on project lifecycles.",
+      tech: ["Python", "FastAPI", "ChromaDB", "Next.js"],
+      github: "https://github.com/Shree222Hema/AI-BASED-SMART-TASK",
     },
   ],
   experience: [
@@ -41,7 +41,7 @@ export const siteConfig = {
       role: "Entry Level Software Engineer",
       company: "Ominaya Technologies Pvt Ltd",
       period: "Present",
-      description: "Working on full stack applications using React, Next.js, Node.js, and Spring Boot.",
+      description: "Leading the development of high-impact full-stack applications using React, Next.js, Node.js, and Spring Boot with a focus on AI integration.",
     },
   ],
 };
