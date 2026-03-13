@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Briefcase } from 'lucide-react';
 import { siteConfig } from '@/data/siteConfig';
+import { cn } from '@/lib/utils';
 
 export const Experience = () => {
   return (
