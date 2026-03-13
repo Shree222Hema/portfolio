@@ -2,6 +2,7 @@ export const siteConfig = {
   name: "Hemashree K J",
   title: "Full Stack Engineer",
   description: "I build scalable web applications using Java, Spring Boot, React, Next.js, and PostgreSQL.",
+  profileImage: "/profile.jpg",
   about: "I am a Full Stack Engineer with experience in Java, Spring Boot, React, Next.js, Node.js, and PostgreSQL. I enjoy building scalable web applications, designing REST APIs, and working with modern frontend technologies. I am passionate about learning new technologies and solving real-world problems through software development.",
   email: "hemashreekjhemashreekj@gmail.com",
   socials: {

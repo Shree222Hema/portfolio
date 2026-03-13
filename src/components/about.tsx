@@ -46,11 +46,18 @@ export const About = () => {
             viewport={{ once: true }}
             className="flex-1 relative"
           >
-            <div className="aspect-square max-w-md mx-auto relative">
-              {/* This is a placeholder for a profile image, but we use a stylized box since we don't have one */}
-              <div className="absolute inset-0 border-2 border-primary rounded-2xl transform translate-x-4 translate-y-4 -z-10"></div>
-              <div className="w-full h-full bg-muted border border-border rounded-2xl flex items-center justify-center overflow-hidden">
-                <span className="text-8xl font-black text-primary/10">HKJ</span>
+            <div className="aspect-[4/5] max-w-md mx-auto relative group">
+              <div className="absolute inset-0 border-2 border-primary rounded-2xl transform translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform"></div>
+              <div className="w-full h-full bg-muted border border-border rounded-2xl flex items-center justify-center overflow-hidden relative">
+                {siteConfig.profileImage ? (
+                  <img 
+                    src={siteConfig.profileImage} 
+                    alt={siteConfig.name}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                ) : (
+                  <span className="text-8xl font-black text-primary/10">HKJ</span>
+                )}
               </div>
             </div>
           </motion.div>
