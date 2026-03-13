@@ -1,10 +1,17 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, ArrowRight } from 'lucide-react';
 import { siteConfig } from '@/data/siteConfig';
 
 export const Hero = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const containerVars = {
     initial: { opacity: 0 },
     animate: {
@@ -94,32 +101,34 @@ export const Hero = () => {
       </div>
 
       {/* Advanced Particles Decor */}
-      <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
-        {[...Array(15)].map((_, i) => (
-          <motion.div
-            key={i}
-            initial={{ 
-              opacity: 0.1,
-              x: Math.random() * 100 + "%",
-              y: Math.random() * 100 + "%",
-              scale: Math.random() * 0.5 + 0.5
-            }}
-            animate={{
-              y: ["-10%", "110%"],
-              opacity: [0.1, 0.3, 0.1],
-            }}
-            transition={{
-              duration: Math.random() * 10 + 20,
-              repeat: Infinity,
-              ease: "linear",
-              delay: Math.random() * -20
-            }}
-            className="absolute w-1 h-1 bg-primary rounded-full blur-[2px]"
-          />
-        ))}
-        <div className="absolute top-[10%] right-[10%] w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px] animate-pulse"></div>
-        <div className="absolute bottom-[10%] left-[5%] w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[120px] animate-bounce-slow"></div>
-      </div>
+      {mounted && (
+        <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
+          {[...Array(15)].map((_, i) => (
+            <motion.div
+              key={i}
+              initial={{ 
+                opacity: 0.1,
+                x: Math.random() * 100 + "%",
+                y: Math.random() * 100 + "%",
+                scale: Math.random() * 0.5 + 0.5
+              }}
+              animate={{
+                y: ["-10%", "110%"],
+                opacity: [0.1, 0.3, 0.1],
+              }}
+              transition={{
+                duration: Math.random() * 10 + 20,
+                repeat: Infinity,
+                ease: "linear",
+                delay: Math.random() * -20
+              }}
+              className="absolute w-1 h-1 bg-primary rounded-full blur-[2px]"
+            />
+          ))}
+          <div className="absolute top-[10%] right-[10%] w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px] animate-pulse"></div>
+          <div className="absolute bottom-[10%] left-[5%] w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[120px] animate-bounce-slow"></div>
+        </div>
+      )}
     </section>
   );
 };
