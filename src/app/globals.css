@@ -107,8 +107,30 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-500;
+    background-image: 
+      radial-gradient(at 0% 0%, hsla(210, 100%, 50%, 0.1) 0, transparent 50%),
+      radial-gradient(at 50% 0%, hsla(280, 100%, 50%, 0.1) 0, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(210, 100%, 50%, 0.1) 0, transparent 50%);
+    background-attachment: fixed;
   }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/20 rounded-full hover:bg-primary/40 transition-colors;
+  }
+
+  /* Custom Selection */
+  ::selection {
+    @apply bg-primary/30 text-foreground;
+  }
+
   html {
     scroll-behavior: smooth;
   }
